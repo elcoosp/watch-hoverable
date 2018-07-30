@@ -7,7 +7,7 @@ export default class WatchHoverable extends React.Component {
     cumulatedHoveringTime: 0
   }
 
-  checkScheduledCallbacks = () => {
+  checkNextScheduledCallback = () => {
     if (this.state.scheduledCallbacks.length) {
       const [[minTime, cb], ...rest] = this.state.scheduledCallbacks
       if (this.state.cumulatedHoveringTime >= minTime) {
@@ -30,7 +30,7 @@ export default class WatchHoverable extends React.Component {
           s.cumulatedHoveringTime + (Date.now() - s.currentHoveringStart),
         currentHoveringStart: 0
       }),
-      this.checkScheduledCallbacks
+      this.checkNextScheduledCallback
     )
 
   render() {
