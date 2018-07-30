@@ -1,0 +1,31 @@
+{
+  "name": "watch-hoverable",
+  "version": "1.0.0",
+  "description": "React HOC to watch an hoverable component and trigger actions",
+  "main": "index.js",
+  "scripts": {
+    "start": "parcel src/index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/elcoosp/watch-hoverable.git"
+  },
+  "keywords": [],
+  "author": "elcoosp <elcoosp@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/elcoosp/watch-hoverable/issues"
+  },
+  "homepage": "https://github.com/elcoosp/watch-hoverable#readme",
+  "devDependencies": {
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "parcel-bundler": "^1.9.7",
+    "react-dom": "^16.4.1"
+  },
+  "dependencies": {
+    "react": "^16.4.1"
+  }
+}
